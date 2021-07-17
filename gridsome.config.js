@@ -22,21 +22,21 @@ module.exports = {
     {
       use: 'gridsome-source-static-meta',
       options: {
-        path: 'pathPrefix/content/site/*.json'
+        path: 'content/site/*.json'
       }
     },
     {
       use: '@gridsome/source-filesystem',
       options: {
         typeName: 'Author',
-        path: './pathPrefix/content/author/*.md'
+        path: './content/author/*.md'
       }
     }, 
     {
       use: '@gridsome/source-filesystem',
       options: {
         typeName: 'Blog',
-        path: './pathPrefix/content/blog/**/*.md',
+        path: './content/blog/**/*.md',
         refs: {
           author: 'Author',
           tags: {
@@ -71,19 +71,19 @@ module.exports = {
   templates: {
     Blog: [
       {
-        path: '/blog/:title'
+        path: '/pathPrefix/blog/:title'
       }
     ],
     Category: [{
-      path: '/category/:title',
+      path: '/pathPrefix/category/:title',
       component: '~/templates/Category.vue'
     }],
     Author: [{
-      path: '/author/:name',
+      path: '/pathPrefix/author/:name',
       component: '~/templates/Author.vue'
     }],
     Tag: [{
-      path: '/tags/:title',
+      path: '/pathPrefix/tags/:title',
     }],
   }
 }
