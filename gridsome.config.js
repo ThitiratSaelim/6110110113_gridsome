@@ -4,7 +4,7 @@ module.exports = {
   siteName: 'Korean Series',
   siteDescription: 'The Most Popular Korean Series',
   siteUrl: 'https://ThitiratSaelim.github.io',
-  pathPrefix: '/6110110113_Webapp_Assignment1_Git',
+  pathPrefix: '/6110110113_gridsome',
 
   plugins: [
     {
