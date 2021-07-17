@@ -71,19 +71,19 @@ module.exports = {
   templates: {
     Blog: [
       {
-        path: '/pathPrefix/blog/:title'
+        path: '/6110110113_gridsome/blog/:title'
       }
     ],
     Category: [{
-      path: '/pathPrefix/category/:title',
+      path: '/6110110113_gridsome/category/:title',
       component: '~/templates/Category.vue'
     }],
     Author: [{
-      path: '/pathPrefix/author/:name',
+      path: '/6110110113_gridsome/author/:name',
       component: '~/templates/Author.vue'
     }],
     Tag: [{
-      path: '/pathPrefix/tags/:title',
+      path: '/6110110113_gridsome/tags/:title',
     }],
   }
 }
